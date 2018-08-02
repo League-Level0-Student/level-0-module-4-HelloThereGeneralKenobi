@@ -25,5 +25,30 @@ public class SleepyHead {
          * print “get up lazybones!” If it is a weekday, and we are on vacation,
          * print “sleep in”.
          */
+        
+        int lukasisfat = JOptionPane.showConfirmDialog(null, "Is it a weekday?","Sleepy Head", JOptionPane.YES_NO_OPTION);
+        if(lukasisfat == 1) {
+        		isWeekday = true;
+        }
+        else {
+        		isWeekday = false;
+        }
+        if(isWeekday = true)
+        {
+        		int lukasiswide = JOptionPane.showConfirmDialog(null, "Is it vacation?","Sleepy Head", JOptionPane.YES_NO_OPTION);
+        		
+        		if(lukasiswide == 0) {
+        			isVacation = false;
+        			JOptionPane.showMessageDialog(null, "Sleep in!");
+        		}
+        		else if(lukasiswide == 1) {
+        			isVacation = true;
+        			JOptionPane.showMessageDialog(null, "Get up lazybones!");
+        		}
+        }
+        else {
+        	JOptionPane.showMessageDialog(null, "Get up lazybones!");
+        }
+        
     }
 }

@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
@@ -7,7 +9,16 @@ public class StringMethods1 {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to whatever you want
-
+		String urmom = JOptionPane.showInputDialog("What word would you like to analyze?");
+		System.out.println(urmom.charAt(2));
+		System.out.println(urmom.length());
+		for(int i = 0; i < urmom.length(); i++ ) {
+			System.out.println(urmom.charAt(i));
+			if(urmom.charAt(i) == 'a') {
+				System.out.println(urmom.charAt(i));
+			}
+		}
+		
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
 		
